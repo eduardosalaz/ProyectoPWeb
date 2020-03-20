@@ -5,4 +5,4 @@ Proyecto Medio Curso Programacion Web
   - [ ] Scrollbar for Chrome (nobody uses Edge anyway)
 
 # LINK
-[link](https://eduardosalaz.github.io/ProyectoPWeb/)
+[link](https://eduardosalaz.github.io/ProyectoPWeb/index.html)
