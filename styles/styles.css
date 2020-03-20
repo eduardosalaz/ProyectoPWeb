@@ -60,6 +60,7 @@ ul {
     position: fixed;
       top: 0;
       width: 100%;
+      z-index: 1;
   }
   @font-face {font-family: F1; src: url(../fonts/Formula1-Regular.otf);}
   @font-face {font-family:F1Bold; src:url(../fonts/Formula1-Bold.otf/);}
@@ -110,4 +111,45 @@ ul {
       flex: 3;
       background-color: white;
       padding: 10px;
+  }
+  .flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+    float: right;
+    z-index: 0;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-backM {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  .flip-card-backM {
+    background-color: #00D2BE;
+    color: white;
+    transform: rotateY(180deg);
   }
