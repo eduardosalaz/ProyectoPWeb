@@ -153,3 +153,8 @@ ul {
     color: white;
     transform: rotateY(180deg);
   }
+  #nombreH{
+      color: #00D2BE;
+      font-size: 36px;
+      text-align: center;
+  }
