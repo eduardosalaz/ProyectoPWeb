@@ -62,9 +62,9 @@ ul {
       width: 100%;
       z-index: 1;
   }
-  @font-face {font-family: F1; src: url(../fonts/Formula1-Regular.otf);}
-  @font-face {font-family:F1Bold; src:url(../fonts/Formula1-Bold.otf/);}
-  @font-face {font-family: F1Wide; src:url(../fonts/Formula1-Wide.otf);}
+  @font-face {font-family: F1; src: url("../fonts/Formula1-Regular.otf");}
+  @font-face {font-family:F1Bold; src:url("../fonts/Formula1-Bold.otf/");}
+  @font-face {font-family: F1Wide; src:url("../fonts/Formula1-Wide.otf");}
   
   :root {
       font-size: 16px;
@@ -84,9 +84,12 @@ ul {
         position: absolute;
         font-family: 'F1';
     }
-    img{
+    #logo{
         
         height: 25px;
+    }
+    #flag{
+        float: start;
     }
     section{
       display: -webkit-flex;
